@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-	resources :earlys
-	get "/earlys/	new" => "earlys#new"
+
 
 	 root "static_pages#home"
  
