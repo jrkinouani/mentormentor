@@ -1,0 +1,13 @@
+<div class="container">
+	<h1>Mentor Mentor</h1>
+	<h3>Vous souhaitez être Mentor</h3>
+	
+
+	<%= form_for @mentor do |f|%>
+	<%= f.email_field :email %>
+	<%= f.select :cours, ['France', 'Belgique', 'Luxembourg', 'Suisse'] %>
+	<%= f.text_field :city %>
+	<%= f.submit %> 
+  </div>
+	<% end %>
+</div>
