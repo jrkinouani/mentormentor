@@ -4,7 +4,7 @@ class StudentsController < ApplicationController
 	end
 
 	def create 
-		@student = Student.new(params[:email])
+		@student = Student.new(params[:email, :city, :cours])
 		if @student.save
 			redirect_to root_path
 			

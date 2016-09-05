@@ -1,8 +1,11 @@
 <div class="container">
 	<h1>Mentor Mentor</h1>
+	
 
 	<%= form_for @student do |f|%>
 	<%= f.email_field :email %>
+	<%= f.select :cours, ['France', 'Belgique', 'Luxembourg', 'Suisse'] %>
+	<%= f.text_field :city %>
 	<%= f.submit %> 
   </div>
 	<% end %>
