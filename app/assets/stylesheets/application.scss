@@ -17,13 +17,13 @@
 @import "bootstrap";
 
 .navbar-custom {
-    background-color: transparent;
+    background-color: white;
     padding: 25px 0;
     -webkit-transition: padding .3s;
     -moz-transition: padding .3s;
     transition: padding .3s;
     border: none;
-    padding-bottom:100px;
+    padding-bottom:10px;
 }
 
 
@@ -69,11 +69,17 @@
 }*/
 .navbar-default .navbar-nav > li > a
 {
-    color: white;
+    color: red;
     font-weight: bold;
 }
+.navbar-brand.page-scroll
+{
+    color: #d94949;
+    font-size: 30px;
+    font-weight: bold;  
+}
 
-.tilte
+/*.tilte
 {
     margin-top:200px;
     font-size:50px;
@@ -83,7 +89,7 @@
     text-align: center;
     color: #d94949;
 
-}
+}*/
 
 p.baseline
 {
@@ -96,12 +102,13 @@ p.baseline
 }
 .slogan
 {
-	
+	margin-top: 150px;
+    margin-bottom: 50px;
     font-family: 'proxima-nova-semibold';
     color: white;
     text-align: center;
     font-weight: 700;
-    font-size: 2.5em;
+    font-size: 40px;
 }
 
 .btn-lg
@@ -111,6 +118,7 @@ color: #fff;
 background-color: #d94949;
 
 }
+
 
 /*page infos*/
 #exemple
