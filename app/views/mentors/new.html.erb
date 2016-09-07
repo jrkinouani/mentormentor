@@ -1,5 +1,51 @@
-<div class="container">
-	<h1>Mentor Mentor</h1>
+<div class="row">	
+	<div class="col-md-6 col-xs-12" id="formulaire">
+	  <div class="container">
+	  	<div class="col-xs-12 col-md-4">
+		<h1>Mentor Mentor</h1>
+		<h3>Vous souhaitez être Mentor</h3>
+		
+
+		<%= form_for @mentor do |f|%>
+		
+		<%= f.email_field :email, class:"form-control", :placeholder => "Votre email"%>
+		<!--<select class="form-control">
+			 <option>Quel type de cours je souhaite donnez ?</option>
+			 <option>Electronique</option>
+			 <option>Electricité</option>
+			 <option>Menuserie</option>
+			 <option>Arduino</option>
+			 <option>Raspberry Pi</option>
+			</select>-->
+		<%= f.select :cours,  ['France', 'Belgique', 'Luxembourg', 'Suisse'] ,class:"form-control" ,:value => "Validez"  %>
+		<%= f.text_field :city , :placeholder => "Dans quel ville résidez-vous ?", class:"form-control"%>
+
+		<%= f.submit :value => "Validez"%> 
+	  
+		<% end %>
+		</div>
+	  </div>
+	</div>
+
+
+	<div class="col-md-6" id="exemple">
+
+		<div class="col-lg-4 col-sm-6 text-center">
+                <img class="img-circle img-responsive img-center" src="touret.JPG" alt="">
+                <h3>John Smith
+                    <small>Job Title</small>
+                </h3>
+                <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+            </div>
+	</div>
+</div>
+
+
+
+
+
+
+	<!--<h1>Mentor Mentor</h1>
 	<h3>Vous souhaitez être Mentor</h3>
 	
 
@@ -8,6 +54,5 @@
 	<%= f.select :cours, ['France', 'Belgique', 'Luxembourg', 'Suisse'] %>
 	<%= f.text_field :city %>
 	<%= f.submit %> 
-  </div>
+  
 	<% end %>
-</div>
