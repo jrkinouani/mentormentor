@@ -6,7 +6,7 @@ class StudentsController < ApplicationController
 	def create 
 		@student = Student.new(student_params)
 		if @student.save
-			redirect_to root_path
+			redirect_to thanks_path
 			
 		end
 	end

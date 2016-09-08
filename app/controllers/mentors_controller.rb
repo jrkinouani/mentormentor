@@ -7,7 +7,7 @@ class MentorsController < ApplicationController
 	def create
 		@mentor = Mentor.new(mentor_params)
 		if @mentor.save
-			redirect_to root_path
+			redirect_to thanks_path
 		end
 	end
 
